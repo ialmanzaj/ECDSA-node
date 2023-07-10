@@ -51,6 +51,9 @@ app.listen(port, () => {
   console.log(`Listening on port ${port}!`);
 });
 
+// Export the Express API
+module.exports = app
+
 function setInitialBalance(address) {
   if (!balances[address]) {
     balances[address] = 0;
